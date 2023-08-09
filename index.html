@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Travel Tours</title>
+</head>
+<body>
+    
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">TravelTours</div>
+            <ul class="nav-list">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#tours">Tours</a></li>
+                <li><a href="#testimonial">Testimonial</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1>Explore the World with Us</h1>
+            <p>Discover amazing travel experiences tailored just for you.</p>
+            <a href="#" class="cta-button">View Tours</a>
+        </div>
+    </section>
+    <section id="tours" class="tours">
+        <h2>Featured Tours</h2>
+        <div class="tour-card">
+            <img src="assets/place8.jpeg" alt="Tour 1">
+            <h3>Tropical Paradise Escape</h3>
+            <p>Relax on beautiful beaches, explore lush jungles, and experience local culture.</p>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+        <div class="tour-card">
+            <img src="assets/place6.jpeg" alt="Tour 2">
+            <h3>Mountain Adventure Expedition</h3>
+            <p>Conquer towering peaks, witness breathtaking vistas, and challenge your limits.</p>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+        <div class="tour-card">
+            <img src="assets/14.png" alt="Tour 1">
+            <h3>Historical tour</h3>
+            <p>Enjoy the arts and heritage places with beautiful view.</p>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+    </section>
+
+    
+
+<section id="testimonial" class="testimonial">
+    <div class="testimonial-content">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonial-slider">
+            <div class="testimonial-slide">
+                <p>"An unforgettable experience! The tour exceeded my expectations in every way."</p>
+                <p class="author">- Sarah Johnson</p>
+            </div>
+            <div class="testimonial-slide">
+                <p>"Absolutely loved the adventure tour. The guides were knowledgeable and friendly."</p>
+                <p class="author">- David Smith</p>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+<section id="services" class="services">
+    <h2>Our Services</h2>
+    <div class="service-card">
+        <img src="assets/place4.jpeg" alt="Service 1">
+        <img src="assets/place8.jpeg" alt="Service 1">`
+        <img src="assets/place5.jpeg" alt="Service 1">
+        <img src="assets/place9.jpeg" alt="Service 1">
+        <h3>Customized Tours</h3>
+        <p>We create personalized itineraries based on your preferences and interests.</p>
+    </div>
+    <div class="service-card">
+        <img src="assets/19.jpg" alt="Service 2">
+        <img src="assets/20.jpeg" alt="Service 2">
+        <h3>Experienced Guides</h3>
+        <p>Our knowledgeable guides ensure a memorable and informative travel experience.</p>
+    </div>
+   
+</section>
+
+
+
+<section id="gallery" class="gallery">
+    <h2>Tour Gallery</h2>
+    <div class="image-grid">
+        <div class="gallery-item">
+            <img src="assets/place12.jpeg" alt="Tour 1">
+        </div>
+        <div class="gallery-item">
+            <img src="assets/place11.jpeg" alt="Tour 2">
+        </div>
+        </div>
+        
+    </div>
+    <div class="image-grid">
+        <div class="gallery-item">
+            <img src="assets/place7.jpeg" alt="Tour 2">
+        </div>
+        <div class="gallery-item">
+            <img src="assets/18.jpg" alt="Tour 2">
+        </div>
+       
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>If you have any questions or inquiries, feel free to get in touch with us.</p>
+    <div class="contact-form">
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <textarea placeholder="Your Message"></textarea>
+        <button type="submit" class="btn">Send</button>
+    </div>
+</section>
+
+
+
+    <footer class="footer">
+        <p>&copy; 2023 TravelTours. All rights reserved.</p>
+    </footer>
+
+    <script>
+       
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+    </script>
+</body>
+</html>
